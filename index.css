@@ -1,0 +1,153 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+/* header starts */
+.hero{
+  height: 100vh;
+  width: 100%;
+  background-image: url('img/img1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.side-menu{
+  display: none;
+}
+.hamb{
+  display: none;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+}
+nav ul{
+  display: flex;
+  gap: 30px;
+}
+.logo{
+  color: white;
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+span{
+  color: green;
+}
+nav ul li a{
+  color: white;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.btn{
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 30px;
+}
+.content{
+  margin: 100px 100px;
+}
+.content h4{
+  font-size: 15px;
+  color: green;
+  margin: 15px 0;
+}
+.content h1{
+  color: white;
+  font-size: 50px;
+}
+.content p{
+  font-size: 20px;
+  color: white;
+  margin: 15px 0;
+}
+/* form section */
+.newsletter form{
+  position: relative;
+  width: 380px;
+}
+.newsletter form input:first-child{
+  max-width: 200px;
+  width: 100%;
+  padding: 14px 130px 14px 15px;
+  border: 2px solid green;
+  border-radius: 30px;
+  outline: none;
+}
+.newsletter form input:last-child{
+  position: absolute;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 30px;
+  background-color: green;
+  color: white;
+  top: 6px;
+  right: 40px;
+  left: 200px;
+}
+.col{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2rem;
+}
+.col img{
+  width: 200px;
+  height: 200px;
+}
+
+.container1{
+  display: flex;
+  gap: 2rem;
+  background-color: black;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 100px 150px;
+  box-sizing: border-box;
+  justify-content: center;
+}
+.textt{
+  width: 450px;
+}
+.textt h2{
+  font-size: 50px;
+}
+/* form section ends */
+/* header ends */
+@media (max-width: 768px) {
+  nav{
+    display: block;
+    padding-left: 10px;
+  }
+  nav ul{
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.col{
+  display: block;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2rem;
+}
+.col img{
+  width: 400px;
+  height: 400px;
+}
+.btn{
+  background-color: green;
+  color: white;
+  font-weight: 400;
+  padding: 5px 20px;
+  border-radius: 30px;
+  margin-top: 200px;
+  }
+  .content{
+    padding-left: 10px;
+    margin: 150px 10px;
+  }
+
+}
